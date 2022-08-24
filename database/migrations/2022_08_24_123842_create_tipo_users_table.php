@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('tipo_users', function (Blueprint $table) {
             $table->id();
+            $table->string('tipo')->nullable();
             $table->timestamps();
         });
     }
