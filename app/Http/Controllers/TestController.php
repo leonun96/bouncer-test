@@ -16,6 +16,7 @@ class TestController extends Controller
 	}
 	public function index ()
 	{
-		return view('test');
+		$users = User::all();
+		return view('test')->with(['users' => $users,]);
 	}
 }
